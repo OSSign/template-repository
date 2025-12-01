@@ -62,7 +62,7 @@ jobs:
           name: files-to-sign
       
 
-      - uses: ossign/ossign-action@main
+      - uses: ossign/ossign@main
         with:
           config: ${{ secrets.OSSIGN_CONFIG }}
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -95,4 +95,5 @@ jobs:
             The source code was fetched from https://github.com/${{ env.SOURCE_REPOSITORY }}@${{ github.event.inputs.source_branch }}
             
           
+
 
